@@ -10,7 +10,7 @@
 <script type="text/javascript">
 function validate(){
 var Dato1 = document.forms["calc_form"]["Data1"].value;
-var Dato2 = document.forms["calc_form"]["Data1"].value;
+var Dato2 = document.forms["calc_form"]["Data2"].value;
 if(!Dato1){
 	alert("Theres no number in space 1!!!");
 	return false;
