@@ -19,14 +19,29 @@ if(!Dato2){
 	alert("Theres no number in space 2!!!");
 	return false;
 }
+if (!/^([0-9])*[.]?[0-9]*$/.test(Dato1)){
+	   alert("El valor " + Dato1 + " no es un número");
+	   return false;
+}
+if (!/^([0-9])*[.]?[0-9]*$/.test(Dato2)){
+	   alert("El valor " + Dato2 + " no es un número");
+	   return false;
+}
 return true;
 }
+
+
 </script>
 
 <%-- Metodo do post para la calculadora --%>
 <Form name="calc_form" method="POST" action="ExaFinal" 
 onsubmit="return validate()">
 <table>
+					<tr>
+					<td>
+					<img src="http://img2.wikia.nocookie.net/__cb20140201231432/sonic/es/images/4/45/PIKACHU-pikachu-29274386-861-927.jpg" width = 200>
+					</td>
+					</tr>
 					
 					<tr>
 					<td>Primer numero:</td>
@@ -57,7 +72,7 @@ onsubmit="return validate()">
 					<tr>
 					<td>	</td>
 					<td>
-					<input type="submit" value="Make the operation"/>
+					<input type="submit" value="Resultado!!!"/>
 					</td>
 					</tr>
 </table>
